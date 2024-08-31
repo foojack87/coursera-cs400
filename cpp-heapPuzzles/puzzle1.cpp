@@ -9,12 +9,15 @@ int main() {
 
   k = i;
   cout << i << j << k << *p << *q << *r << endl;
+  // 242242
 
   p = q;
   cout << i << j << k << *p << *q << *r << endl;
+  // 242442
 
   *q = *r;
   cout << i << j << k << *p << *q << *r << endl;
+  // 222222
 
   return 0;
 }
