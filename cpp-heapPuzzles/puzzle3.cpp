@@ -11,16 +11,16 @@ using std::cout;
 using std::endl;
 
 int main() {
-  int *p, *q;
-  p = new int;
-  q = p;
-  *q = 8;
-  cout << *p << endl;
+  int *p, *q; // create pointer 'p' and pointer 'q' on the stack memory.
+  p = new int; // p is now allocating heap memory
+  q = p; // q is now also using same heap memory as p
+  *q = 8; // value at pointer 'q' is 8 
+  cout << *p << endl; // 8
 
-  q = new int;
-  *q = 9;
-  cout << *p << endl;
-  cout << *q << endl;
+  q = new int; // q is now allocating its own new heap memory
+  *q = 9; // value at pointer 'q' is 9
+  cout << *p << endl; // 8
+  cout << *q << endl; // 9
 
   return 0;
 }

@@ -11,12 +11,12 @@ using std::cout;
 using std::endl;
 
 int main() {
-  int *x;
-  int size = 3;
-  x = new int[size];
+  int *x; // pointer x on stack
+  int size = 3;  // int size = 3 on stack
+  x = new int[size]; // allocates heap memory with an array of size 3 integers.
 
   for (int i = 0; i < size; i++) {
-    x[i] = i + 3;
+    x[i] = i + 3; // [3, 4, 5]
   }
 
   delete[] x;
