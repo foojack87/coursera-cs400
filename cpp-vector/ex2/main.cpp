@@ -14,7 +14,7 @@ int main() {
     v.push_back( i * i );
   }
 
-  std::cout << v[12] << std::endl;
+  std::cout << v[12] << std::endl; // 144
 
   return 0;
 }
